@@ -1,0 +1,141 @@
+.hero {
+    height: auto;
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-caption {
+    height: 80vh;
+    padding-top: 10rem;
+    margin: 0 0 0 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.hero-caption .hero-title {
+    object-fit: cover;
+    height: 100px;
+    width: max-content;
+}
+
+.hero-caption .hero-des {
+    width: 500px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.play-options {
+    align-items: center;
+    width: max-content;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.play-options img {
+    height: 30px;
+}
+
+.play-options button {
+    height: 40px;
+    width: 180px;
+    padding: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-options button:active {
+    transform: scale(1.01);
+}
+
+.play-options .play-btn:hover {
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+.play-options .info-btn:hover {
+    background-color: rgba(128, 128, 128, 0.717);
+}
+
+.play-options .info-btn {
+    background-color: gray;
+    border: none;
+    color: white;
+}
+
+.play-options .play-btn {
+    border: none;
+}
+
+/* ✅ Responsive Styles */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .hero-caption {
+        margin-left: 2rem;
+        padding-top: 6rem;
+    }
+
+    .hero-caption .hero-des {
+        width: 90%;
+        font-size: 0.95rem;
+    }
+
+    .play-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .play-options button {
+        width: 160px;
+        font-size: 16px;
+        padding: 1rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .hero-caption {
+        margin-left: 1rem;
+        padding-top: 4rem;
+    }
+
+    .hero-caption .hero-title {
+        height: 60px;
+    }
+
+    .hero-caption .hero-des {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .play-options {
+        gap: 10px;
+    }
+
+    .play-options button {
+        width: 140px;
+        height: 36px;
+        font-size: 14px;
+        padding: 0.8rem;
+    }
+
+    .play-options img {
+        height: 25px;
+    }
+}

@@ -1,0 +1,169 @@
+/* Base Styles */
+.login {
+    height: 100vh;
+    background-image: linear-gradient(#0000007e, #0000007e), url(/background_banner.jpg);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 8%;
+}
+
+.login-form {
+    height: auto;
+    max-height: 80vh;
+    width: 400px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form h1 {
+    margin-bottom: 2rem;
+    font-size: 24px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background-color: rgba(58, 55, 55, 0.685);
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+form button {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    margin: 0;
+}
+
+form .remember {
+    display: flex;
+    align-items: center;
+}
+
+form .remember label {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.form-switch {
+    margin-top: 30px;
+    color: #737373;
+    font-size: 14px;
+}
+
+.form-switch span {
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-spinner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-spinner img {
+    width: 60px;
+    transition: 2s;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+    .login {
+        padding: 20px 5%;
+    }
+
+    .login-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .login-logo {
+        width: 120px;
+        left: 5%;
+    }
+
+    form button {
+        font-size: 12px;
+    }
+
+    .form-switch {
+        font-size: 12px;
+    }
+
+    form .remember label {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 15px;
+    }
+
+    .login-logo {
+        width: 100px;
+    }
+
+    form .form-help {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-switch {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    form button {
+        height: 45px;
+        font-size: 11px;
+    }
+}
